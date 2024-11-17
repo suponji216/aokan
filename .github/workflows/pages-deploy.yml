@@ -28,7 +28,7 @@ jobs:
       - name: npm install
         run: npm install
       - name: npm build
-        run: npm build
+        run: npm run build
         env:
           GITHUB_PAGES: true
       - name: Upload artifact
