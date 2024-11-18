@@ -5,8 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
+    extend: {
+      fontFamily: {
+        'title': ['Doto'],
+        'body': ['Zen Kaku Gothic New'],
+      }, colors: {
+        deepCove: '#03093B',
+        java: '#09C5CB'
+      }
+    },
+    plugins: [],
+  }
 }
-
