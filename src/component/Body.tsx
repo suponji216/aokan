@@ -1,5 +1,3 @@
-import Uchujin from "../assets/1811541.png";
-
 function Body() {
   return (
     <div className="mx-auto">
