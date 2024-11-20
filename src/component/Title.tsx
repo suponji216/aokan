@@ -26,7 +26,7 @@ function Title() {
         .to("img", {
           delay: gsap.utils.random(0.5, 1.5, 0.1),
           duration: 0.5,
-          opacity: 1,
+          opacity: 0.5,
         })
         .to("img", {
           rotation: 360,
@@ -49,6 +49,9 @@ function Title() {
         ref={title}
         className="h-dvh font-title font-black text-9xl text-right text-neutral-300 flex flex-col justify-end bg-deepCove"
       >
+        <div ref={moon} className="absolute top-40 left-72">
+          <img src={Moon} alt="moon" className="w-72 h-72 opacity-0" />
+        </div>
         <span className="ease opacity-0 mr-64">
           TEI<span className="text-java">A</span>NBO
         </span>
@@ -59,9 +62,6 @@ function Title() {
           <span className="text-java">CON</span>FERENCE
         </span>
         <span className="ease opacity-0 mr-24 mb-20">2024</span>
-      </div>
-      <div ref={moon} className="absolute z-1 top-40 left-72">
-        <img src={Moon} alt="moon" className="w-72 h-72 opacity-0" />
       </div>
     </div>
   );
