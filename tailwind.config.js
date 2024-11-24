@@ -14,6 +14,7 @@ export default {
         java: '#09C5CB'
       }
     },
-    plugins: [],
-  }
+  },
+  plugins: [],
 }
+
